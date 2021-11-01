@@ -1,0 +1,15 @@
+spring:
+    application:
+     name: gateway-server 
+    cloud:
+        config: 
+            uri: http://127.0.0.1:8071
+    config:
+      import: "optional:configserver:"
+
+#logging:
+#  level:
+#    com.netflix: WARN
+#    org.springframework.web: WARN
+#    com.optimagrowth: DEBUG
+#            

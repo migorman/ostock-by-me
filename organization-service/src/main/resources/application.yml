@@ -1,0 +1,11 @@
+spring:
+    application:
+      name: organization-service 
+    profiles:
+      active: test
+    cloud:
+      config: 
+        uri: http://127.0.0.1:8071
+    config:
+      import: "optional:configserver:"
+
